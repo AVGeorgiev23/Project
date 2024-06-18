@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="codes.css">
+    <ul class="tabs">
+
+        <li class="tab">
+            <input type="radio" name="tabs" checked="checked" id="tab1" />
+            <label for="tab1">Fibonacci row</label>
+            <div id="tab-content1" class="content">
+                <h1>Fibonacci sequence in C++</h1>
+                <hr />
+                <h3>Simple code for Fibonacci sequence</h3>
+                <br />
+                <pre>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 0;
+    int b = 1;
+    unsigned int sum = 0;
+
+    for (int i = 0; i <= 100; i++) {
+        sum = a + b;
+        cout << i << ": " << sum << endl;
+        a = b;
+        b = sum;
+    }
+
+}
+                </pre>
+
+                <h3>Result of this code:</h3>
+                <pre>
+0: 1
+1: 2
+2: 3
+3: 5
+4: 8
+5: 13
+6: 21
+7: 34
+8: 55
+9: 89
+10:144
+...
+100: 927372692193079200000
+                </pre>
+
+
+                
+            </div>
+        </li>
+
+        <li class="tab">
+            <input type="radio" name="tabs" id="tab2" />
+            <label for="tab2">Devision row</label>
+            <div id="tab-content2" class="content">
+                <h1>Tab content 2</h1>
+                <hr />
+                <h3>Ut bibendum augue vel magna rhoncus</h3>
+                <br />
+                <div>
+                    <h3>lets show devisions</h3>
+                <pre>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    double a = 0;
+    double b = 1;
+    double dev = 0;
+
+    for (int i = 0; i <= 100; i++) {
+        double sum = a + b;
+        dev = a / b;
+        cout << i << ": " << setprecision(25) << dev << endl;
+        a = b;
+        b = sum;
+    }
+
+}                    
+                </pre>
+and result
+                <pre>
+0: 0
+1: 1
+2: 0.5
+3: 0.6666666666666666296592325
+4: 0.5999999999999999777955395
+5: 0.625
+6: 0.6153846153846154187760931
+7: 0.6190476190476190687661529
+8: 0.6176470588235294378876006
+9: 0.6181818181818181656694833
+10: 0.6179775280898875955415406
+11: 0.6180555555555555802271783
+12: 0.6180257510729614267575016
+13: 0.6180371352785145599995076
+14: 0.6180327868852458772508385
+15: 0.6180344478216818204785454
+....
+100: 0.6180339887498949025257389                    
+                </pre>
+                </div>
+            </div>
+        </li>
+
+        
+
+        
+    </ul>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
